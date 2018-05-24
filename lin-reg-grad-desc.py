@@ -28,8 +28,8 @@ def optimise_cost_func(x, y, current_B0 = 0, current_B1 = 0, iters=1000, alpha=0
 		B1_gradient = -(2/m) * sum(y - pred_y)
 		current_B0 = current_B0 - (alpha * B0_gradient) 
 		current_B1 = current_B1 - (alpha * B1_gradient)
-		#pdb.set_trace()
 	return current_B0, current_B1, cost
+
 
 if __name__ == "__main__":
 	#Read in csv
@@ -44,6 +44,8 @@ if __name__ == "__main__":
 
 	outputs = optimise_cost_func(x, y)
 	print(outputs)
+
+#TODO 1. Neaten 2. Expand plotting 3. Regularisation 4. Verify Results 5. Adapt for multiple X 
 	
 
 
