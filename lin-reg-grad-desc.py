@@ -14,7 +14,7 @@ import pdb
 
 def optimise_cost_func(x, y, current_B0 = 0, current_B1 = 0, iters=1000, alpha=0.001):
 	"""
-	Purpose: Optimise cost function of lin reg (one input var) using gradient descent
+	Purpose: Optimise cost function of lin reg (one continuous input var) using gradient descent
 	Input: x: array of floats, y: array of floats same length as x
 	Output: Optimised B0, B1, last cost
 	"""
